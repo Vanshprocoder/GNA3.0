@@ -7,7 +7,8 @@ import MockInterviews from "./comp/MockInterviews";
 import ResumeAnalyzer from "./comp/ResumeAnalyzer"; 
 import JobRecommendations from './comp/JobRecommendations'
 import ResumeScoreAnalysis from './comp/ResumeScoreAnalysis'
-// import ResumeAnalyzer from './comp/ResumeAnalyzer'
+import ResumeUploader from './comp/ResumeUploader';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path="/interview" element={<MockInterviews />} />
         <Route path="/job" element={<JobRecommendations/>}/>
         <Route path="/score" element={<ResumeScoreAnalysis/>}/>
+        <Route path="/upload" element={<ResumeUploader/>}/>
       </Routes>
     </Router>
   )
