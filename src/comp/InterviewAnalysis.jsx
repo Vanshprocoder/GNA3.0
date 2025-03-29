@@ -25,7 +25,7 @@ const InterviewAnalysis = ({ analysisData, onBack }) => {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <button 
-            onClick={() => navigate("/dashboard")}
+            onClick={() => navigate("/")}
             className="flex items-center text-gray-700 gap-2 bg-white hover:bg-gray-100 px-4 py-2 rounded-lg transition-colors shadow"
           >
             <ArrowLeft size={20} />
