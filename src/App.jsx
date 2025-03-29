@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MockInterviews from "./comp/MockInterviews";
 import ResumeAnalyzer from "./comp/ResumeAnalyzer"; 
 import JobRecommendations from './comp/JobRecommendations'
-import ResumeAnalyzer from './comp/ResumeAnalyzer'
+import ResumeScoreAnalysis from './comp/ResumeScoreAnalysis'
+// import ResumeAnalyzer from './comp/ResumeAnalyzer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ResumeAnalyzer />} />
         <Route path="/interview" element={<MockInterviews />} />
+        <Route path="/job" element={<JobRecommendations/>}/>
+        <Route path="/score" element={<ResumeScoreAnalysis/>}/>
       </Routes>
     </Router>
   )
